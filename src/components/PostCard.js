@@ -15,8 +15,6 @@ const PostCard = (props) => {
 
   const context = useContext(AuthContext);
 
-  const commentPost = () => {};
-
   return (
     <Card fluid>
       <Card.Content>
@@ -38,7 +36,6 @@ const PostCard = (props) => {
           content="Post a comment"
           trigger={
             <Button
-              as="div"
               labelPosition="right"
               as={Link}
               to={`/posts/${props.post.id}`}
